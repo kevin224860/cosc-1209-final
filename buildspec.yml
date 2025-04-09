@@ -1,0 +1,8 @@
+is this the proper buildspec.yml file for my project? version: 0.2
+          phases:
+            build:
+              commands:
+                - echo "Building Final..."
+                - echo '{"ImageURI":"amazon/amazon-ecs-sample"}' > imagedefinitions.json
+          artifacts:
+            files: imagedefinitions.json
